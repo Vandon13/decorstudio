@@ -52,6 +52,23 @@ img {
   font-weight: bold;
   line-height: 21px;
   color: #2E353D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 1;
+}
+
+.navbar__phone::after {
+  display: block;
+  content: '';
+  height: 1.5px;
+  width: 0%;
+  background-color: #2E353D;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.navbar__phone:hover::after, .navbar__phone:focus::after {
+  width: 100%;
 }
 
 .hero__body {
@@ -75,9 +92,18 @@ img {
 }
 
 .hero__btn {
+  border: 1px solid #2C6DED;
   padding: 13px 17px;
   line-height: 22px;
   font-weight: normal;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero__btn:hover {
+  border: 1px solid #2C6DED;
+  background-color: #ffffff;
+  color: #2C6DED;
 }
 
 .hero__image {
